@@ -1,0 +1,117 @@
+questInfo:
+ - name: Try Not to Die
+   startingLevel: 34
+   starter: 'Halberd'
+   xp: 123235
+   questStages:
+           - 'Please do not die.' #Stage 1
+           - 'Seriously! It won^t be fun.' #Stage 2
+   successMessages:
+           - '&6[Quest Complete: Try Not to Die]'
+           - 'fwefoiwejfowiejf'
+           - 'wefef'
+
+
+npcs:
+ - name: Halberd
+   quest: Try Not to Die
+   coords: 23423,12323,23434
+   occupation: priest
+   baby: false
+
+   ## Messages ##
+   fallBackMessage: HalberdFallback
+   repeatMessage: HalberdRepeat
+   greetMessage: HalberdGreet
+   nearbyMessage: 'null'
+   lowStageMessage: HalberdLowStage
+   lowLevelMessage: HalberdLowLevel
+
+
+   stages:
+            3: HalberdStage3
+   requirements:
+            3: 324234,123,234234
+   rewards:
+            1: 2343,234234,1232
+
+
+ - name: Sauron
+   quest: Try Not to Die
+   coords: 234234,12323,123123124
+   occupation: blacksmith
+   baby: false
+
+   ## Messages ##
+   fallBackMessage: SauronFallback
+   repeatMessage: SauronRepeat
+   greetMessage: SauronGreet
+   nearbyMessage: 'null'
+   lowStageMessage: SauronLowStage
+   lowLevelMessage: SauronLowLevel
+
+
+   stages:
+            1: SauronStage1
+   requirements:
+            999: 0,0,0
+   rewards:
+            4: 123123,23423,12323
+
+
+messages:
+
+ - title: HalberdStage3
+   strings:
+        - '123123123'
+        - 'owfijweoifjowjeowif wefef f wfe wf we'
+   delay: 5
+ - title: HalberdFallback
+   strings:
+        - 'fwfefe'
+ - title: HalberdRepeat
+   strings:
+        - 'wefefefe'
+ - title: HalberdGreet
+   strings:
+        - 'wfwefefef'
+ - title: HalberdLowStage
+   strings:
+        - 'fwefewofijweofi'
+ - title: HalberdLowLevel
+   strings:
+        - 'wefefewfwef'
+ - title: SauronStage1
+   strings:
+        - 'Ash nazg durbatuluk'
+        - 'Ash nazg gimbatul'
+        - 'Ash nazg thrakatuluk'
+        - 'Ash burzum-ishi krimpatul'
+   delay: 5
+ - title: SauronFallback
+   strings:
+        - 'wefweff'
+ - title: SauronRepeat
+   strings:
+        - 'wefw'
+ - title: SauronGreet
+   strings:
+        - 'wefwefefe'
+ - title: SauronLowStage
+   strings:
+        - 'undefined'
+ - title: SauronLowLevel
+   strings:
+        - 'fwefwefe'
+regions:
+
+ - name: MountDoom
+   loc1: 23423,12323,234234
+   loc2: 123,12324,3423
+   quest: Try Not to Die
+   message: 'wefefwefe'
+   stageRequiredEntry: 2
+   itemsRequiredEntry: 'null'
+   tp: 34,123,14235
+   escalateStage: true
+   stageSetMessage: 'wefweffefefefef'
