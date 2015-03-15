@@ -1,0 +1,62 @@
+questInfo:
+ - name: What the hell just happened
+   startingLevel: 43
+   starter: 'Jonathan'
+   xp: 1235523
+   questStages:
+           - 'fewfwefwefefefef' #Stage 1
+           - 'fewfewfefef' #Stage 2
+           - 'wfefefefefwef' #Stage 3
+           - 'fwe' #Stage 4
+   successMessages:
+           - 'fwefefef'
+           - 'fefef21423fewfwef'
+           - '235r23fewfwefwef'
+
+
+npcs:
+ - name: Jonathan
+   quest: What the hell just happened
+   coords: 2342,12323,23434
+   occupation: priest
+   baby: false
+
+   ## Messages ##
+   fallBackMessage: JonathanFallback
+   repeatMessage: JonathanRepeat
+   greetMessage: JonathanGreet
+   nearbyMessage: 'null'
+   lowStageMessage: JonathanLowStage
+   lowLevelMessage: JonathanLowLevel
+
+
+   stages:
+            3: JonathanStage3
+   requirements:
+            999: 0,0,0
+   rewards:
+            4: 2312323,12323,123232
+            2: 23434,23434,12321323
+
+
+messages:
+
+ - title: JonathanStage3
+   strings:
+        - 'fwefwefefefefefefefef'
+   delay: 5
+ - title: JonathanFallback
+   strings:
+        - 'fweiojroij34oijwf'
+ - title: JonathanRepeat
+   strings:
+        - 'oirjgomkvwefweofjiwef'
+ - title: JonathanGreet
+   strings:
+        - 'fowejifwe90fwe'
+ - title: JonathanLowStage
+   strings:
+        - 'wefweffewwdww'
+ - title: JonathanLowLevel
+   strings:
+        - 'qweqwdsfwefwef'
